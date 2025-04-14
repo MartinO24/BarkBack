@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.post("/messages")
 def create_message(message: Message):
-    result = db.messages.insert_one(message.dict())
+    result = db.messages.insert_one(message.model_dump())
     return {"inserted_id": str(result.inserted_id)}
 
 @router.get("/messages")
