@@ -40,3 +40,9 @@ yarn-error.log*
 coverage/
 build/
 .cache/
+
+# Environment variables
+.env
+
+# Expo cache/build files (add if missing)
+.expo/
